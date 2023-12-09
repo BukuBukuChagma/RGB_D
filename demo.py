@@ -35,7 +35,7 @@ def main():
     model.load_state_dict(torch.load('./pretrained_model/model_senet'))
     model.eval()
 
-    nyu2_loader = loaddata.readNyu2('data/demo/img_nyu2.png')
+    nyu2_loader = loaddata.readNyu2('data/demo/img.jpg')
   
     test(nyu2_loader, model)
 
